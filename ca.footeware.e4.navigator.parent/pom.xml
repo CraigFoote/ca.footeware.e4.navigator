@@ -16,6 +16,8 @@
 	<modules>
 		<module>../ca.footeware.e4.navigator.targetplatform</module>
 		<module>../ca.footeware.e4.navigator.ui</module>
+		<module>../ca.footeware.e4.navigator.feature</module>
+		<module>../ca.footeware.e4.navigator.repository</module>
 	</modules>
 
 	<build>
