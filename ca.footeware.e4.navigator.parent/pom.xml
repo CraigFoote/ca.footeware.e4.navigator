@@ -14,7 +14,7 @@
 	</properties>
 
 	<modules>
-		<module>../ca.footeware.e4.navigator.targetPlatform</module>
+		<module>../ca.footeware.e4.navigator.targetplatform</module>
 		<module>../ca.footeware.e4.navigator.ui</module>
 	</modules>
 
