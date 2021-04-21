@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_DGhg4KFDEeuEzocCc3DvsQ">
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_DGhg4KFDEeuEzocCc3DvsQ">
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_EdtWQKFDEeuEzocCc3DvsQ" featurename="children" parentElementId="ca.footeware.e4.application.perspectivestack">
     <elements xsi:type="advanced:Perspective" xmi:id="_iklYUKFFEeuEzocCc3DvsQ" elementId="ca.footeware.e4.navigator.perspective" label="Navigator" iconURI="platform:/plugin/ca.footeware.e4.navigator.ui/icons/folder.png" tooltip="File Navigator">
       <children xsi:type="basic:PartSashContainer" xmi:id="_m8JZAKFGEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.ui.partsashcontainer">
@@ -13,12 +13,17 @@
   </fragments>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_0Dm-gKFGEeuFYJmNgOTiXw" featurename="menuContributions" parentElementId="xpath:/">
     <elements xsi:type="menu:MenuContribution" xmi:id="_7CLTIKFGEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.ui.menucontribution.showview" parentId="ca.footeware.e4.application.ui.menu.showview">
-      <children xsi:type="menu:DirectMenuItem" xmi:id="_NIvP4KFHEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.menu.showview" label="Navigator" iconURI="platform:/plugin/ca.footeware.e4.navigator.ui/icons/folder.png" tooltip="File Navigator" contributionURI="bundleclass://ca.footeware.e4.navigator.ui/ca.footeware.e4.navigator.ui.handlers.ShowNavigatorHandler"/>
+      <children xsi:type="menu:DirectMenuItem" xmi:id="_NIvP4KFHEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.menu.showview" label="Navigator" iconURI="platform:/plugin/ca.footeware.e4.navigator.ui/icons/folder.png" tooltip="File Navigator" contributionURI="bundleclass://ca.footeware.e4.navigator.ui/ca.footeware.e4.navigator.ui.handlers.ShowViewHandler"/>
     </elements>
   </fragments>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Y9SmkKFIEeuFYJmNgOTiXw" featurename="menuContributions" parentElementId="xpath:/">
     <elements xsi:type="menu:MenuContribution" xmi:id="_a_RFYKFIEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.ui.menucontribution.showperspective" parentId="ca.footeware.e4.application.ui.menu.showperspective">
       <children xsi:type="menu:DirectMenuItem" xmi:id="_hm0oMKFIEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.menu.showperspective" label="Navigator" iconURI="platform:/plugin/ca.footeware.e4.navigator.ui/icons/folder.png" tooltip="File Navigator" contributionURI="bundleclass://ca.footeware.e4.navigator.ui/ca.footeware.e4.navigator.ui.handlers.ShowPerspectiveHandler"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_39hJQKJMEeuEoO5cLeJYvw" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_6CZLEKJMEeuEoO5cLeJYvw" elementId="ca.footeware.e4.navigator.ui.partdescriptor.navigator" label="Navigator" iconURI="platform:/plugin/ca.footeware.e4.navigator.ui/icons/folder.png" tooltip="Navigator" closeable="true" contributionURI="bundleclass://ca.footeware.e4.navigator.ui/ca.footeware.e4.navigator.ui.parts.NavigatorPart">
+      <toolbar xmi:id="_9vsjQKJMEeuEoO5cLeJYvw" elementId="ca.footeware.e4.navigator.ui.toolbar.1"/>
     </elements>
   </fragments>
 </fragment:ModelFragments>
