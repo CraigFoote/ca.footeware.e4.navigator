@@ -2,7 +2,7 @@
 <feature
       id="ca.footeware.e4.navigator.feature"
       label="Navigator Feature"
-      version="1.0.0.qualifier"
+      version="1.1.0.qualifier"
       provider-name="Footeware.ca">
 
    <description url="http://www.example.com/description">

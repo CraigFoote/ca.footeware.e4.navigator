@@ -28,7 +28,9 @@ public class NavigatorLabelProvider extends LabelProvider {
 	@Override
 	public String getText(Object element) {
 		if (element instanceof File) {
-			return ((File) element).getName();
+			String name = ((File) element).getName();
+			name = name.isEmpty() ? "/" : name;
+			return name;
 		}
 		return super.getText(element);
 	}

@@ -5,6 +5,9 @@
       <children xsi:type="basic:PartSashContainer" xmi:id="_m8JZAKFGEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.ui.partsashcontainer">
         <children xsi:type="basic:PartStack" xmi:id="_nzpBsKFGEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.ui.partstack">
           <children xsi:type="basic:Part" xmi:id="_oXG7IKFGEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.part" contributionURI="bundleclass://ca.footeware.e4.navigator.ui/ca.footeware.e4.navigator.ui.parts.NavigatorPart" label="Navigator" iconURI="platform:/plugin/ca.footeware.e4.navigator.ui/icons/folder.png" tooltip="File Navigator" closeable="true">
+            <menus xsi:type="menu:PopupMenu" xmi:id="_2apSYI-kEe2ejvBsONaHYA" elementId="ca.footeware.e4.navigator.ui.popupmenu.0" label="">
+              <children xsi:type="menu:DirectMenuItem" xmi:id="_Mx2oUI_OEe2XSJdggU7GSQ" elementId="ca.footeware.e4.navigator.ui.directmenuitem.copy" label="Copy" mnemonics="" contributionURI="bundleclass://ca.footeware.e4.navigator.ui/ca.footeware.e4.navigator.ui.handlers.CopyHandler"/>
+            </menus>
             <toolbar xmi:id="_wQKiEKFGEeuFYJmNgOTiXw" elementId="ca.footeware.e4.navigator.ui.toolbar.0"/>
           </children>
         </children>
