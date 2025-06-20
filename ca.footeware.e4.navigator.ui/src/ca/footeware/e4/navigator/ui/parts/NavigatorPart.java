@@ -3,8 +3,6 @@ package ca.footeware.e4.navigator.ui.parts;
 
 import java.io.File;
 
-import javax.annotation.PostConstruct;
-
 import org.eclipse.e4.ui.di.Focus;
 import org.eclipse.e4.ui.services.EMenuService;
 import org.eclipse.e4.ui.workbench.modeling.ESelectionService;
@@ -16,6 +14,7 @@ import org.eclipse.swt.widgets.Composite;
 
 import ca.footeware.e4.navigator.ui.providers.NavigatorContentProvider;
 import ca.footeware.e4.navigator.ui.providers.NavigatorLabelProvider;
+import jakarta.annotation.PostConstruct;
 
 public class NavigatorPart {
 
@@ -24,7 +23,7 @@ public class NavigatorPart {
 	@PostConstruct
 	public void postConstruct(Composite parent, EMenuService menuService, ESelectionService selectionService) {
 		parent.setLayout(GridLayoutFactory.swtDefaults().create());
-		
+
 		viewer = new TreeViewer(parent, SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL | SWT.MULTI);
 		viewer.getTree()
 				.setLayoutData(GridDataFactory.swtDefaults().grab(true, true).align(SWT.FILL, SWT.FILL).create());

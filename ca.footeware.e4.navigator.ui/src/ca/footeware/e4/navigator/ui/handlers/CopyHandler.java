@@ -14,23 +14,27 @@ import org.eclipse.swt.dnd.FileTransfer;
 import org.eclipse.swt.dnd.Transfer;
 import org.eclipse.swt.widgets.Display;
 
+import jakarta.inject.Inject;
+
 public class CopyHandler {
 
 	@Execute
+	@Inject
 	public void execute(ESelectionService selectionService) {
 		Clipboard cb = new Clipboard(Display.getDefault());
 		Object selection = selectionService.getSelection();
-		TreeSelection treeSelection = (TreeSelection) selection;
-		List<String> fileNameList = new LinkedList<>();
-		Iterator<?> iterator = treeSelection.iterator();
-		while (iterator.hasNext()) {
-			File file = (File) iterator.next();
-			fileNameList.add(file.getAbsolutePath());
-		}
-		String[] data = fileNameList.toArray(new String[fileNameList.size()]);
+		if (selection instanceof TreeSelection treeSelection) {
+			List<String> fileNameList = new LinkedList<>();
+			Iterator<?> iterator = treeSelection.iterator();
+			while (iterator.hasNext()) {
+				File file = (File) iterator.next();
+				fileNameList.add(file.getAbsolutePath());
+			}
+			String[] data = fileNameList.toArray(new String[fileNameList.size()]);
 
-		cb.setContents(new String[][] { data }, new Transfer[] { FileTransfer.getInstance() });
-		cb.dispose();
+			cb.setContents(new String[][] { data }, new Transfer[] { FileTransfer.getInstance() });
+			cb.dispose();
+		}
 	}
 
 }

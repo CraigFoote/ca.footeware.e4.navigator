@@ -27,17 +27,17 @@ public class NavigatorLabelProvider extends LabelProvider {
 
 	@Override
 	public String getText(Object element) {
-		if (element instanceof File) {
-			String name = ((File) element).getName();
+		if (element instanceof File file) {
+			String name = file.getName();
 			name = name.isEmpty() ? "/" : name;
 			return name;
 		}
 		return super.getText(element);
 	}
 
+	@Override
 	public Image getImage(Object element) {
-		if (element instanceof File) {
-			File file = (File) element;
+		if (element instanceof File file) {
 			if (file.isDirectory()) {
 				return getResourceManager().createImage(createImageDescriptor("icons/folder.png"));
 			}
