@@ -14,11 +14,6 @@ public class ShowViewHandler {
 	
 	private String partId = "ca.footeware.e4.navigator.ui.partdescriptor.navigator";
 
-	/**
-	 * 
-	 * @param app
-	 * @param partService
-	 */
 	@Execute
 	public void execute(MApplication app, EPartService partService) {
 		MWindow mWindow = app.getChildren().get(0);

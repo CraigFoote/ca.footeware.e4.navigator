@@ -2,8 +2,8 @@
 package ca.footeware.e4.navigator.ui.handlers;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 
 import org.eclipse.e4.core.di.annotations.Execute;
@@ -21,17 +21,16 @@ public class CopyHandler {
 	@Execute
 	@Inject
 	public void execute(ESelectionService selectionService) {
-		Clipboard cb = new Clipboard(Display.getDefault());
-		Object selection = selectionService.getSelection();
-		if (selection instanceof TreeSelection treeSelection) {
-			List<String> fileNameList = new LinkedList<>();
+		if (selectionService.getSelection() instanceof TreeSelection treeSelection) {
+			List<String> filePaths = new ArrayList<>();
 			Iterator<?> iterator = treeSelection.iterator();
 			while (iterator.hasNext()) {
 				File file = (File) iterator.next();
-				fileNameList.add(file.getAbsolutePath());
+				filePaths.add(file.getAbsolutePath());
 			}
-			String[] data = fileNameList.toArray(new String[fileNameList.size()]);
+			String[] data = filePaths.toArray(new String[filePaths.size()]);
 
+			Clipboard cb = new Clipboard(Display.getDefault());
 			cb.setContents(new String[][] { data }, new Transfer[] { FileTransfer.getInstance() });
 			cb.dispose();
 		}
