@@ -26,7 +26,7 @@
     </elements>
   </fragments>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_39hJQKJMEeuEoO5cLeJYvw" featurename="descriptors" parentElementId="xpath:/">
-    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_6CZLEKJMEeuEoO5cLeJYvw" elementId="ca.footeware.e4.navigator.ui.partdescriptor.navigator" label="Navigator" iconURI="platform:/plugin/ca.footeware.e4.navigator.ui/icons/folder.png" tooltip="Navigator" closeable="true" contributionURI="bundleclass://ca.footeware.e4.navigator.ui/ca.footeware.e4.navigator.ui.parts.NavigatorPart"/>
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_6CZLEKJMEeuEoO5cLeJYvw" elementId="ca.footeware.e4.partdescriptor.navigator" label="Navigator" iconURI="platform:/plugin/ca.footeware.e4.navigator.ui/icons/folder.png" tooltip="Navigator" closeable="true" contributionURI="bundleclass://ca.footeware.e4.navigator.ui/ca.footeware.e4.navigator.ui.parts.NavigatorPart"/>
   </fragments>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_-2Wy8E3eEfCbgrPKY7kJZA" featurename="handlers" parentElementId="xpath:/">
     <elements xsi:type="commands:Handler" xmi:id="_FQj2QE3fEfCbgrPKY7kJZA" elementId="ca.footeware.e4.navigator.ui.handler.copy" contributionURI="bundleclass://ca.footeware.e4.navigator.ui/ca.footeware.e4.navigator.ui.handlers.CopyHandler" command="_xlxa0Cy4Ee6QBfx2m4bu7Q"/>
