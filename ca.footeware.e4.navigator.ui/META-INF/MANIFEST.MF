@@ -12,8 +12,7 @@ Require-Bundle: org.eclipse.e4.ui.di;bundle-version="1.5.600",
  org.eclipse.e4.core.di;bundle-version="1.9.600",
  org.eclipse.e4.ui.workbench;bundle-version="1.18.0",
  org.eclipse.osgi;bundle-version="3.23.100",
- org.eclipse.e4.ui.services;bundle-version="1.6.500",
- ca.footeware.e4.application.ui;bundle-version="2.0.0"
+ org.eclipse.e4.ui.services;bundle-version="1.6.500"
 Bundle-RequiredExecutionEnvironment: JavaSE-23
 Automatic-Module-Name: ca.footeware.e4.navigator.ui
 Bundle-ActivationPolicy: lazy

@@ -25,7 +25,7 @@ public class NavigatorOpenListener implements IOpenListener {
 			if (desktop.isSupported(Desktop.Action.OPEN)) {
 				try {
 					desktop.open(file);
-				} catch (IOException e) {
+				} catch (IOException _) {
 					// DO NOTHING
 				}
 			}
